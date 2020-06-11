@@ -11,7 +11,6 @@ class Blog extends Component {
         posts: [],
         selectedPostId: null,
         error: false
-        
     }
 
     componentDidMount () {

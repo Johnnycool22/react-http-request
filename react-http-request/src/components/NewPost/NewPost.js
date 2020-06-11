@@ -13,7 +13,7 @@ class NewPost extends Component {
     postDataHandler = () => {
         const data = {
             title:this.state.title,
-            boby: this.state.content,
+            body: this.state.content,
             author: this.state.author
         }
         axios.post('/posts', data)
