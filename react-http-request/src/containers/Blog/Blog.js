@@ -55,7 +55,7 @@ class Blog extends Component {
                     <nav>
                         <ul>
                             <li><a href="/">Home</a></li>
-                            <li><a href="/">New Post</a></li>
+                            <li><a href="/new-post">New Post</a></li>
                         </ul>
                     </nav>
                 </header>
