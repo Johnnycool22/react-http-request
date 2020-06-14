@@ -51,7 +51,7 @@ class Blog extends Component {
 
         return (
             <div>
-                <header>
+                <header className="Blog">
                     <nav>
                         <ul>
                             <li><a href="/">Home</a></li>
