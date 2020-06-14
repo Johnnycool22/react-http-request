@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import axios from '../../../axios';
+
+import Post from '../../../components/Post/Post';
+import './Posts.css';
 
 class Posts extends Component {
     state = {
@@ -48,3 +51,5 @@ class Posts extends Component {
     }
   }
 }
+
+export default Posts;
