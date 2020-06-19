@@ -8,7 +8,7 @@ import FullPost from '../FullPost/FullPost';
 
 class Posts extends Component {
     state = {
-      posts: [],
+      posts: []
   }
 
   componentDidMount () {
@@ -32,7 +32,7 @@ class Posts extends Component {
 }
 
     postSelectedHandler = (id) => {
-      this.props.history.push({pathname: '/' + id});
+      this.props.history.push('/posts/' + id);
   }
 
     render() {

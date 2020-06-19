@@ -17,12 +17,12 @@ class Blog extends Component {
 
     render () {
         return (
-            <div>
-                <header className="Blog">
+            <div className="Blog">
+                <header>
                     <nav>
                         <ul>
                             <li><NavLink 
-                                to="/" 
+                                to="/posts" 
                                 exact
                                 activeClassName="my-active"
                                 activeStyle={{
@@ -43,8 +43,8 @@ class Blog extends Component {
                     
                     <Switch>
                         { this.state.auth ? <Route path="/new-post" component={AsyncNewPost}/> : null}
-                        <Route path="/posts" component={Posts}/>
-                        <Route render={() => <h1>Not found</h1>}/>
+                        <Route path="/posts" component={Posts} />
+                        <Route render={() => <h1>Not found</h1>} />
                         {/* <Redirect from="/" to="/posts" /> */}
                     </Switch>
             </div>
