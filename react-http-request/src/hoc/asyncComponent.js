@@ -1,8 +1,6 @@
-const { Component } = require("react")
-
 import React, { Component } from 'react';
 
-const aysncComponent = (importComponent) => {
+const asyncComponent = (importComponent) => {
     return class extends Component {
           state = {
               component: null
@@ -23,4 +21,4 @@ const aysncComponent = (importComponent) => {
       }
   }
 
-  export default aysncComponent;
+  export default asyncComponent;
